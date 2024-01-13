@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/feedback/index.css">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback Form</h1>
+        <form id="feedbackForm">
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+            <div class="emoji-container">
+                <div class="emoji" id="happy" onclick="selectEmoji('happy')">😊</div>
+                <div class="emoji" id="neutral" onclick="selectEmoji('neutral')">😐</div>
+                <div class="emoji" id="sad" onclick="selectEmoji('sad')">😞</div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result" class="hidden">
+            <p>Thank you for your feedback!</p>
+            <p>We appreciate your input.</p>
+        </div>
+    </div>
+    <script src="/js/feedback/fb.js"></script>
+</body>
+</html>
