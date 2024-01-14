@@ -1,13 +1,59 @@
-.head-contain {
-    background-color: white;
+body {
+    font-family: 'Noto Sans Ethiopic', sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.5s;
 }
-#head-logo {
-   margin-left: 20px;
+#head {
+    border-radius: 900px;
 }
-.reg-btn {
-    margin-left: 30px;
-    background-color: rgb(6, 6, 207);
-    margin-top: 20px;
-    color: white;
+p {
+    font-weight: bold;
+}
+header {
+    background-color: #00796b;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    background-color: #004d40;
+    color: #fff;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.5s;
+}
+
+nav a:hover {
+    color: #ffc107;
+}
+
+.content-section {
+    display: none;
+    padding: 2em;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
