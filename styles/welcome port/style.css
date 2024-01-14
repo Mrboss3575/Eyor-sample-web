@@ -14,13 +14,24 @@ body {
     width: 30px;
 }
 a{
+    padding: 10px;
     list-style: none;
     text-decoration: none;
     list-style-type: none;
     margin: 20px;
     display: block;
     background-color: bisque;
+    text-decoration: solid;
+    border-style: hidden;
+    border-color: cyan;
+    font-weight: bolder;
+    border-radius: 20px;
 } 
+a:hover {
+    background-color: #555;
+    color: coral;
+    border-radius: 20px;
+}
 #hr {
     margin-top: 70px;
 }
